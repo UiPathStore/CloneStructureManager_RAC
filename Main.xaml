@@ -215,7 +215,7 @@
                 <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4" />
               </If.Else>
             </If>
-            <ui:OnUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="On Element Appear 'Static'" sap:VirtualizedContainerService.HintSize="484,395.3333333333333" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1">
+            <ui:OnUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="On Element Appear 'Static'" sap:VirtualizedContainerService.HintSize="484,395.3333333333333" sap2010:WorkflowViewState.IdRef="OnUiElementAppear_1" RepeatForever="False">
               <ui:OnUiElementAppear.Body>
                 <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,218" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -247,9 +247,6 @@
                   </ui:Click>
                 </Sequence>
               </ui:OnUiElementAppear.Body>
-              <ui:OnUiElementAppear.RepeatForever>
-                <Literal x:TypeArguments="x:Boolean" />
-              </ui:OnUiElementAppear.RepeatForever>
               <ui:OnUiElementAppear.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="60bbd4c8-2590-47db-85f0-537ff4a6e0b8" InformativeScreenshot="67132c254ce01a9b807e8af2a499d170" Selector="&lt;wnd app='javaw.exe' cls='*' title='Duplicate Results' /&gt;&lt;wnd aaname='The selected structure has been duplicated successfully*' cls='Static' title='The selected structure has been duplicated successfully.   The t*' /&gt;">
                   <ui:Target.TimeoutMS>
